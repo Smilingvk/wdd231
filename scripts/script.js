@@ -1,5 +1,5 @@
-// Course data
-const courses = [
+   // Course data
+   const courses = [
     {
         name: "Web Frontend Development I",
         code: "WDD 130",
@@ -105,7 +105,6 @@ function updateTotalCredits(coursesToDisplay) {
 function filterCourses(filterType, buttonElement) {
     currentFilter = filterType;
     
-    // Update filter button styles
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
     });
@@ -156,9 +155,4 @@ document.addEventListener('DOMContentLoaded', function() {
             filterCourses(filterType, this);
         });
     });
-    
-    // Add event listeners for any other interactive elements
-    // For example, if you had a search button:
-    // const searchButton = document.getElementById('searchButton');
-    // searchButton.addEventListener('click', searchCourses);
 });

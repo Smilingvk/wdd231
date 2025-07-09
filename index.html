@@ -23,7 +23,7 @@
                     </svg>
                     <span class="site-name">Valeria</span>
                 </div>
-                <div class="hamburger" onclick="toggleMenu()">
+                <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -60,9 +60,9 @@
             <section id="certificate">
                 <h2>Certificate Courses</h2>
                 <div class="filter-buttons">
-                    <button class="filter-btn active" onclick="filterCourses('all')">All Courses</button>
-                    <button class="filter-btn" onclick="filterCourses('WDD')">WDD Courses</button>
-                    <button class="filter-btn" onclick="filterCourses('CSE')">CSE Courses</button>
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                    <button class="filter-btn" data-filter="CSE">CSE Courses</button>
                 </div>
                 <div class="course-grid" id="courseGrid"></div>
                 <div class="credits-summary">
