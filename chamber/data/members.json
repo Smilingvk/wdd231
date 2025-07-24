@@ -1,0 +1,122 @@
+[
+    {
+      "name": "Tech Solutions Lima",
+      "address": "Av. Arequipa 1234, Miraflores, Lima",
+      "phone": "+51 1 234-5678",
+      "website": "https://techsolutions.pe",
+      "image": "tech-solutions.jpg",
+      "membershipLevel": 3,
+      "description": "Leading technology solutions provider in Peru",
+      "category": "Technology",
+      "yearEstablished": 2015,
+      "employees": 45
+    },
+    {
+      "name": "Lima Restaurant Group",
+      "address": "Jr. de la Unión 567, Centro de Lima",
+      "phone": "+51 1 345-6789",
+      "website": "https://limarestaurants.pe",
+      "image": "restaurant-group.jpg",
+      "membershipLevel": 2,
+      "description": "Premium dining experiences across Lima",
+      "category": "Food & Beverage",
+      "yearEstablished": 2010,
+      "employees": 120
+    },
+    {
+      "name": "Construcciones Andinas",
+      "address": "Av. Javier Prado 890, San Isidro, Lima",
+      "phone": "+51 1 456-7890",
+      "website": "https://construccionesandinas.pe",
+      "image": "construcciones.jpg",
+      "membershipLevel": 3,
+      "description": "Construction and infrastructure development",
+      "category": "Construction",
+      "yearEstablished": 2008,
+      "employees": 200
+    },
+    {
+      "name": "Lima Financial Services",
+      "address": "Av. Larco 432, Miraflores, Lima",
+      "phone": "+51 1 567-8901",
+      "website": "https://limafinancial.pe",
+      "image": "financial.jpg",
+      "membershipLevel": 1,
+      "description": "Comprehensive financial advisory services",
+      "category": "Financial Services",
+      "yearEstablished": 2012,
+      "employees": 35
+    },
+    {
+      "name": "Textiles Peruanos",
+      "address": "Av. Argentina 123, Callao, Lima",
+      "phone": "+51 1 678-9012",
+      "website": "https://textilesperuanos.pe",
+      "image": "textiles.jpg",
+      "membershipLevel": 2,
+      "description": "Traditional and modern textile manufacturing",
+      "category": "Manufacturing",
+      "yearEstablished": 1995,
+      "employees": 80
+    },
+    {
+      "name": "Lima Marketing Agency",
+      "address": "Av. El Sol 789, San Borja, Lima",
+      "phone": "+51 1 789-0123",
+      "website": "https://limamarketing.pe",
+      "image": "marketing.jpg",
+      "membershipLevel": 1,
+      "description": "Digital marketing and brand development",
+      "category": "Marketing & Advertising",
+      "yearEstablished": 2018,
+      "employees": 25
+    },
+    {
+      "name": "Healthcare Plus Lima",
+      "address": "Av. Grau 456, Barranco, Lima",
+      "phone": "+51 1 890-1234",
+      "website": "https://healthcareplus.pe",
+      "image": "healthcare.jpg",
+      "membershipLevel": 3,
+      "description": "Advanced healthcare and medical services",
+      "category": "Healthcare",
+      "yearEstablished": 2005,
+      "employees": 150
+    },
+    {
+      "name": "Lima Logistics",
+      "address": "Av. Colonial 321, Pueblo Libre, Lima",
+      "phone": "+51 1 901-2345",
+      "website": "https://limalogistics.pe",
+      "image": "logistics.jpg",
+      "membershipLevel": 1,
+      "description": "Supply chain and logistics solutions",
+      "category": "Logistics & Transportation",
+      "yearEstablished": 2020,
+      "employees": 60
+    },
+    {
+      "name": "Energía Verde Perú",
+      "address": "Av. Salaverry 654, Jesús María, Lima",
+      "phone": "+51 1 012-3456",
+      "website": "https://energiaverde.pe",
+      "image": "energia-verde.jpg",
+      "membershipLevel": 2,
+      "description": "Renewable energy solutions and consulting",
+      "category": "Energy & Environment",
+      "yearEstablished": 2017,
+      "employees": 40
+    },
+    {
+      "name": "Lima Education Center",
+      "address": "Av. Universitaria 987, San Miguel, Lima",
+      "phone": "+51 1 123-4567",
+      "website": "https://limaeducation.pe",
+      "image": "education.jpg",
+      "membershipLevel": 1,
+      "description": "Professional development and training programs",
+      "category": "Education & Training",
+      "yearEstablished": 2013,
+      "employees": 30
+    }
+  ]
