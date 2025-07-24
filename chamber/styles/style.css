@@ -663,7 +663,7 @@ footer {
 }
 
 /* High Contrast Mode Support */
-@media (prefers-contrast:active) {
+@media (prefers-contrast:more) {
     :root {
         --border-color: #000;
         --shadow-light: none;
