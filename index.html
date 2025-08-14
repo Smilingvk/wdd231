@@ -1,117 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Development Portfolio - Showcasing projects and coursework in web development and computer programming">
-    <meta name="author" content="Valeria">
-    <title>Web Development Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the City Chamber of Commerce — connecting local businesses." />
+  <meta name="author" content="Valeria Guzman" />
+  <title>Chamber Home</title>
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" content="City Chamber of Commerce" />
+  <meta property="og:description" content="Discover events, weather, and member spotlights in our community." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/chamber/index.html" />
+
+  <!-- Normalize + Main CSS -->
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-container">
-                    <svg class="logo" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="18" fill="#2563eb"/>
-                        <path d="M10 20h20M15 10l5 10-5 10M25 10l-5 10 5 10" stroke="white" stroke-width="2"/>
-                    </svg>
-                    <span class="site-name">Valeria</span>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
+  <header>
+    <h1>City Chamber of Commerce</h1>
     <nav>
-        <div class="container">
-            <ul class="nav-menu">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#chamber">Chamber</a></li>
-                <li><a href="#final">Final</a></li>
-            </ul>
-        </div>
+      <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+      <ul id="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <main>
-        <div class="container">
-            <h1>Home</h1>
-            
-            <section id="about">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Welcome to my web development portfolio! I am a passionate student pursuing a certificate in Web and Computer Programming as part of the Software Development degree program. This portfolio showcases my journey through various web development courses and projects.</p>
-                        <p>I am committed to building modern, responsive, and user-friendly web applications using the latest technologies and best practices. Each project represents a milestone in my learning journey and demonstrates my growing expertise in web development.</p>
-                    </div>
-                    <img class="about-image" src="./images/photo.jpeg" alt="Profile" />
-                </div>
-            </section>
+  <main>
+    <!-- Hero + CTA -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="City skyline at sunrise" />
+      <div class="hero-text">
+        <h2>Welcome to the Chamber</h2>
+        <p>Connecting businesses, fostering growth.</p>
+        <a href="join.html" class="btn">Join Now</a>
+      </div>
+    </section>
 
-            <section id="certificate">
-                <h2>Certificate Courses</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All Courses</button>
-                    <button class="filter-btn" data-filter="WDD">WDD Courses</button>
-                    <button class="filter-btn" data-filter="CSE">CSE Courses</button>
-                </div>
-                <div class="course-grid" id="courseGrid"></div>
-                <div class="credits-summary">
-                    <h3>Total Credits Required</h3>
-                    <div class="credits-number" id="totalCredits">0</div>
-                </div>
-            </section>
+    <!-- Current Events -->
+    <section id="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>June 15 – Networking Breakfast</li>
+        <li>July 1 – Summer Business Expo</li>
+        <li>July 20 – Community Workshop</li>
+      </ul>
+    </section>
 
-            <section id="resume">
-                <h2>Resume Highlights</h2>
-                <div class="resume-content">
-                    <div class="resume-section">
-                        <h3>Education</h3>
-                        <div class="resume-item">
-                            <h4>Certificate in Web and Computer Programming</h4>
-                            <div class="date">2024 - Present</div>
-                            <p>Focusing on modern web development technologies and best practices</p>
-                        </div>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Skills</h3>
-                        <div class="resume-item">
-                            <h4>Frontend Development</h4>
-                            <p>HTML5, CSS3, JavaScript, Responsive Design, Git/GitHub</p>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Tools & Technologies</h4>
-                            <p>VS Code, Browser DevTools, Web Accessibility, SEO</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
+    <!-- Weather -->
+    <section id="weather">
+      <h2>Current Weather</h2>
+      <div id="current-weather" class="member-card">
+        <p><em>Loading…</em></p>
+      </div>
+      <h3>3-Day Forecast</h3>
+      <div id="forecast" class="grid"></div>
+    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="social-links">
-                    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                    <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-                </div>
-                <div class="footer-info">
-                    <p>&copy; <span id="currentYear"></span> Valeria, Arequipa/Peru</p>
-                    <p id="lastModified"></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Member Spotlights -->
+    <section id="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlight-cards" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at info@chamber.com</p>
+    <p>&copy; <span id="year"></span> | Valeria Guzman | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="js/date.js"></script>
+  <script src="js/home.js" type="module"></script>
 </body>
 </html>
