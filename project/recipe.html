@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing recipes from around the world with our comprehensive recipe discovery platform featuring thousands of dishes, ingredients, and cooking techniques.">
+    <meta name="author" content="Student Name">
+    <meta name="keywords" content="recipes, cooking, food, ingredients, cuisine, culinary">
+    
+    <meta property="og:title" content="Recipe Discovery - Find Your Perfect Dish">
+    <meta property="og:description" content="Discover amazing recipes from around the world with detailed instructions and ingredients.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630">
+    <link rel="stylesheet" href="./styles/recipe.css">
+    <script type="module" src="./scripts/recipe.js"></script>
+    <meta property="og:type" content="website">
+    
+    <title>Recipe Discovery - Find Your Perfect Dish</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTYiIGZpbGw9IiNGRjcwNDMiLz4KPHBhdGggZD0iTTEwIDEySDIyVjE4SDEwVjEyWiIgZmlsbD0iIzJEMUIxNyIvPgo8L3N2Zz4K">
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">🍳 Recipe Discovery</a>
+            <nav>
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Discover Amazing Recipes</h1>
+            <p>Explore thousands of delicious recipes from around the world. From quick weeknight dinners to elaborate weekend feasts, find your perfect dish today.</p>
+            <a href="#recipes" class="cta-button">Start Cooking</a>
+        </section>
+
+        <section class="search-section" id="recipes">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search for recipes, ingredients, or cuisine..." id="recipeSearch">
+                <button class="search-button">Search</button>
+            </div>
+            <div class="filter-section">
+                <label for="cuisineFilter">Cuisine:</label>
+                <select class="filter-select" id="cuisineFilter">
+                    <option value="">All Cuisines</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="asian">Asian</option>
+                    <option value="american">American</option>
+                    <option value="mediterranean">Mediterranean</option>
+                </select>
+                
+                <label for="dietFilter">Diet:</label>
+                <select class="filter-select" id="dietFilter">
+                    <option value="">All Diets</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten-free">Gluten Free</option>
+                </select>
+            </div>
+            
+            <div class="error-message" id="errorMessage"></div>
+            <div class="success-message" id="successMessage"></div>
+        </section>
+
+        <section id="recipesContainer">
+            <div class="loading active" id="loadingIndicator">Loading delicious recipes...</div>
+            <div class="recipe-grid" id="recipeGrid"></div>
+        </section>
+    </main>
+
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Recipe Details</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Recipe Discovery. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#attributions">Attributions</a>
+                <a href="#video-demo">Video Demo</a>
+                <a href="#privacy">Privacy Policy</a>
+            </div>
+            <p>Video Demonstration: <a href="https://youtu.be/your-demo-video" target="_blank">View Demo</a></p>
+        </div>
+    </footer>
+</body>
+</html>
